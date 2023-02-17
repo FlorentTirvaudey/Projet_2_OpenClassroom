@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.logo_header, .logo_footer {
+    font-family: "Shrikhand", Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+@media all and (max-width: 780px) {
+    .localisation, .header_content {
+        text-align: center;
+    }
+
+    .localisation {
+        background-color: #e6e6e6;
+    }
+
+    .header_content, #cards {
+        background-color: #f5f3f3;
+    }
+
+    #cards {
+        
+    }
+
+    footer {
+        background-color: #424242;
+        color: white;
+    }
+
+    footer li {
+        list-style: none;
+    }
+}
