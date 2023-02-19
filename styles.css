@@ -33,6 +33,20 @@ header {
         display: flex;
     }
 
+    .content_number {
+        background-color: #9356DC;
+        color: white;
+        padding: 5px;
+        border-radius: 50%;
+    }
+
+    .content {
+        background-color: #f5f3f3;
+        box-shadow: 2px 2px 2px rgb(202, 200, 200);
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
     #cards {
         
     }
