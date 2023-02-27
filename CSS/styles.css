@@ -10,44 +10,140 @@
 
 header {
     text-align: center;
+    padding: 25px;
+    box-shadow: 0px 3px rgb(207, 206, 206);
+    margin-bottom: 3px;
 }
 
 @media all and (max-width: 780px) {
     .localisation, .header_content {
-        text-align: center;
+        justify-content: center;
     }
 
     .localisation {
         background-color: #e6e6e6;
+        display: flex;
+        padding: 20px;
+        color: #424242;
+    }
+
+    .localisation i {
+        margin-right: 25px;
+        font-size: 1.3em;
+    }
+
+    .localisation_text {
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
+    .header_content {
+        text-align: center;
+        padding: 40px;
+    }
+
+    .header_content h2 {
+        font-weight: bold;
+        margin: auto;
+        max-width: 400px;
+        margin-bottom: 20px;
+        font-size: 2.4em;
+        
+    }
+
+    .header_content p {
+        max-width: 700px;
+        margin: auto;
+        margin-bottom: 50px;
+        font-size: 2.0em;
+        color: #555454;
+    }
+
+    .submit_button {
+        padding: 20px 25px 20px 25px;
+        border-radius: 35px;
+        color: white;
+        background: linear-gradient(#FF79DA , #9356DC);
+        border: none;
+        font-weight: bold;
+        font-size: 1.1em;
+        box-shadow: 0px 3px 3px 3px rgb(207, 206, 206);
+        margin-bottom: 40px;
+    }
+
+    .submit_button:hover {
+        cursor: pointer;
     }
 
     .header_content, #cards_section {
         background-color: #f5f3f3;
     }
 
-    .container {
+
+    #functionning_section {
+        margin: 50px 20px 90px 20px;
+    }
+
+    #functionning_section h2 {
+        margin-bottom: 50px;
+        font-size: 2.0em;
+    }
+
+    .container_wrap {
         display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .container {
+        display: relative;
+        align-items: center;
     }
 
     .content_number {
+        position: absolute;
         background-color: #9356DC;
         color: white;
-        padding: 5px;
+        padding: 5px 10px 0px 10px;
         border-radius: 50%;
+        vertical-align: middle;
+        font-size: 1.5em;
     }
 
-    .content {
+    .content_menu {
         display: flex;
+        align-items: center;
         background-color: #f5f3f3;
-        box-shadow: 2px 2px 2px rgb(202, 200, 200);
-        border-radius: 10px;
+        box-shadow: 0px 5px 3px rgb(228, 227, 227);
+        border-radius: 25px;
         font-weight: bold;
+        padding: 30px;
+    }
+
+    .content_menu i {
+        color: #555454;
+        margin-right: 30px;
+        font-size: 1.5em;
+    }
+
+    .content_menu p {
+        align-items: center;
+        font-size: 1.5em;
     }
 
     #cards_section {
+        padding: 60px 25px 50px 25px;
+    }
+
+    #cards_section h2 {
+        font-size: 2.0em;
+        margin-bottom: 35px;
+    }
+
+    .cards_container {
         display: flex;
         flex-direction: column;
-        padding-bottom: 50px;
+        gap: 30px;
     }
 
     .card {
@@ -55,7 +151,6 @@ header {
         border-radius: 20px;
         box-shadow: 3px 3px 3px rgb(202, 200, 200);
         height: 500px;
-        margin: 20px; 
     }
 
     .card_image {
@@ -83,7 +178,6 @@ header {
     }
 
     .icon_content {
-        margin-top: 5px;
         margin-right: 40px;
         font-size: 3.0em;
     }
