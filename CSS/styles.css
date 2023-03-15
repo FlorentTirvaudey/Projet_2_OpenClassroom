@@ -16,6 +16,12 @@ a:visited {
     color: black;
 }
 
+
+/*************************************
+*
+******     MOBILE DEVICE      *******
+*
+**************************************/
 @media all and (max-width: 780px) {
 
     /***********************
@@ -370,7 +376,7 @@ a:visited {
         gap: 20px;
     }
 
-    .type_of_meal {
+    .type_of_meal_1, .type_of_meal_2, .type_of_meal_3 {
         margin-top: 60px;
     }
 
@@ -380,6 +386,806 @@ a:visited {
         background-color: white;
         border-radius: 25px;
         padding: 25px 35px 25px 20px;
+        box-shadow: 5px 5px 5px rgb(230, 229, 229);
+    }
+
+    .description_title_menu {
+        font-weight: bold;
+        font-size: 2.2em;
+    }
+
+    .description_text_menu {
+        margin-top: 8px;
+        font-size: 1.8em;
+        color: #424242;
+    }
+
+    .price_menu {
+        position: relative;
+        top: 50px;
+        font-weight: bold;
+        font-size: 2.0em;
+    }
+
+    .submit_section {
+        padding: 90px 0px 40px 0px;
+        text-align: center;
+    }
+
+    .submit_section .submit_button {
+        width: 340px;
+    }
+}
+
+
+/*************************************
+*
+******     TABLET DEVICE      *******
+*
+**************************************/
+@media all and (min-width: 781px) and (max-width: 1024px) {
+    
+    /***********************
+    *
+    * *** Page d'Acceuil ***
+    *
+    ************************/
+    .acceuil_header {
+        text-align: center;
+        margin-top: 20px;
+        padding: 20px;
+        box-shadow: 0px 5px rgb(212, 210, 210, 1);
+        margin-bottom: 5px;
+    }
+
+    .footer_image {
+        filter: invert(1);
+    }
+
+    .localisation, .header_content {
+        justify-content: center;
+    }
+
+    .localisation {
+        background-color: #e6e6e6;
+        display: flex;
+        padding: 30px;
+        color: #424242;
+    }
+
+    .localisation i {
+        margin-right: 30px;
+        font-size: 2.0em;
+    }
+
+    .localisation_text {
+        font-weight: bold;
+        font-size: 2.0em;
+    }
+
+    .header_content {
+        text-align: center;
+        padding: 40px;
+    }
+
+    .header_content h2 {
+        font-weight: bold;
+        margin: auto;
+        max-width: 580px;
+        margin-bottom: 20px;
+        font-size: 2.9em;
+        
+    }
+
+    .header_content p {
+        max-width: 700px;
+        margin: auto;
+        margin-bottom: 50px;
+        font-size: 2.0em;
+        color: #666666;
+    }
+
+    .submit_button {
+        width: 410px;
+        padding: 30px 30px 30px 30px;
+        border-radius: 50px;
+        color: white;
+        background: linear-gradient(#FF79DA , #9356DC);
+        border: none;
+        font-weight: bold;
+        font-size: 1.8em;
+        box-shadow: 0px 3px 3px 3px rgb(207, 206, 206);
+        margin-bottom: 40px;
+    }
+
+    .submit_button:hover {
+        cursor: pointer;
+    }
+
+    .header_content, #cards_section {
+        background-color: #f5f3f3;
+    }
+
+
+    #functionning_section {
+        margin: 70px 35px 140px 0px;
+    }
+
+    #functionning_section h2 {
+        margin-bottom: 60px;
+        font-size: 2.7em;
+        margin-left: 35px;
+    }
+
+    .container_wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-left: 47px;
+        margin-right: 35px;
+    }
+
+    .container {
+        position: relative;;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    .content_number {
+        position: absolute;
+        background-color: #9356DC;
+        color: white;
+        padding: 8px 17px 5px 17px;
+        border-radius: 50%;
+        font-size: 2.0em;
+        left: 0;
+        top: 50%;
+        transform: translate(-40%, -50%);
+    }
+
+    .content_menu {
+        display: flex;
+        align-items: center;
+        height: 80px;
+        background-color: #f5f3f3;
+        box-shadow: 0px 5px 3px rgb(228, 227, 227);
+        border-radius: 40px;
+        font-weight: bold;
+        padding: 30px;
+    }
+
+    .content_menu:hover {
+        background-color: #faeef5;
+        cursor: pointer;
+    }
+
+    .content_menu:hover i {
+        color: #9356DC;
+    }
+
+    .icon_content_acceuil {
+        display: flex;
+        width: 50px;
+        justify-content: center;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    .icon_content_acceuil i {
+        color: #555454;
+        font-size: 2.5em;
+    }
+
+    .content_menu_text {
+        font-size: 2.0em;
+    }
+
+    #cards_section {
+        padding: 100px 30px 120px 30px;
+    }
+
+    #cards_section h2 {
+        font-size: 2.7em;
+        margin-bottom: 40px;
+    }
+
+    .cards_container {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 30px;
+        box-shadow: 3px 3px 3px rgb(202, 200, 200);
+        height: 500px;
+    }
+
+    .card_image {
+        position: relative;
+        height: 360px;
+        overflow: hidden;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+    
+    .card_image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .element_card_image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #99E2D0;
+        margin-top: 30px;
+        margin-right: 30px;
+        font-size: 2.0em;
+        padding: 15px 30px 15px 30px;
+        border-radius: 5px;
+        color: #509483;
+        font-weight: bold;
+    }
+
+    .card_description_fs {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+    }
+
+    .description_content {
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 1.9em;
+    }
+
+    .description_content .description_text {
+        color: #555454;
+    }
+
+    .icon_content {
+        margin-right: 30px;
+        margin-top: 15px;
+        font-size: 3.0em;
+    }
+
+    .title_text {
+        font-weight: bold;
+        margin-bottom: 5px;
+        font-size: 1.2em;
+    }
+    
+    footer {
+        background-color: #424242;
+        color: white;
+        padding: 55px 0px 50px 45px;
+    }
+
+    footer img {
+        margin-left: 8px;
+    }
+
+    footer ul {
+        margin-top: 30px;
+    }
+
+    footer li {
+        padding: 10px;
+        list-style: none;
+        font-size: 1.9em;
+    }
+
+    footer i {
+        font-size: 0.8em;
+        width: 40px;
+        margin-right: 10px;
+    }
+
+    /*********************************
+    *
+    * *** Pages Menu ***
+    *
+    *********************************/
+    .menu_header {
+        display: flex;
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .arrow_menu_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+    }
+
+    .menu_header a {
+        font-size: 2.5em;   
+    }
+
+    .menu_header i {
+        color: #424242;
+    }
+
+    .logo_container {
+        display: flex;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .image_container {
+        position: relative;
+    }
+
+    .image_container img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .cards_menu_wrap {
+        position: relative;
+        margin-top: -90px;
+        padding: 0px 25px 0px 25px;
+        background-color: #f7f5f5;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+    }
+
+    .card_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 60px;
+    }
+
+    .card_header i {
+        font-size: 3.0em;
+        padding-right: 30px;
+    }
+
+    .title_menu {
+        font-size: 3.5em;
+    }
+
+    main h3 {
+        text-transform: uppercase;
+        font-weight: normal;
+        margin-bottom: 25px;
+        border-bottom: 7px solid #99E2D0;
+        padding-bottom: 10px;
+        width: 90px;
+        font-size: 2.0em;
+        color: #424242;
+    }
+
+    .list_cards_menu {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .type_of_meal_1, .type_of_meal_2, .type_of_meal_3 {
+        margin-top: 60px;
+    }
+
+    .card_menu {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 25px;
+        padding: 25px 35px 25px 20px;
+        box-shadow: 5px 5px 5px rgb(230, 229, 229);
+    }
+
+    .description_title_menu {
+        font-weight: bold;
+        font-size: 2.2em;
+    }
+
+    .description_text_menu {
+        margin-top: 8px;
+        font-size: 1.8em;
+        color: #424242;
+    }
+
+    .price_menu {
+        position: relative;
+        top: 50px;
+        font-weight: bold;
+        font-size: 2.0em;
+    }
+
+    .submit_section {
+        padding: 90px 0px 40px 0px;
+        text-align: center;
+    }
+
+    .submit_section .submit_button {
+        width: 340px;
+    }
+}
+
+
+/*************************************
+*
+******     DESKTOP DEVICE      *******
+*
+**************************************/
+@media all and (min-width: 1025px) {
+    
+    /***********************
+    *
+    * *** Page d'Acceuil ***
+    *
+    ************************/
+    .acceuil_header {
+        text-align: center;
+        margin-top: 20px;
+        padding: 20px;
+        box-shadow: 0px 5px rgb(212, 210, 210, 1);
+        margin-bottom: 5px;
+    }
+
+    .footer_image {
+        filter: invert(1);
+    }
+
+    .localisation, .header_content {
+        justify-content: center;
+    }
+
+    .localisation {
+        background-color: #e6e6e6;
+        display: flex;
+        padding: 30px;
+        color: #424242;
+    }
+
+    .localisation i {
+        margin-right: 30px;
+        font-size: 2.0em;
+    }
+
+    .localisation_text {
+        font-weight: bold;
+        font-size: 2.0em;
+    }
+
+    .header_content {
+        text-align: center;
+        padding: 40px;
+    }
+
+    .header_content h2 {
+        font-weight: bold;
+        margin: auto;
+        max-width: 580px;
+        margin-bottom: 20px;
+        font-size: 2.9em;
+        
+    }
+
+    .header_content p {
+        margin: auto;
+        margin-bottom: 50px;
+        font-size: 2.0em;
+        color: #666666;
+    }
+
+    .submit_button {
+        width: 410px;
+        padding: 30px 30px 30px 30px;
+        border-radius: 50px;
+        color: white;
+        background: linear-gradient(#FF79DA , #9356DC);
+        border: none;
+        font-weight: bold;
+        font-size: 1.8em;
+        box-shadow: 0px 3px 3px 3px rgb(207, 206, 206);
+        margin-bottom: 40px;
+    }
+
+    .submit_button:hover {
+        cursor: pointer;
+    }
+
+    .header_content, #cards_section {
+        background-color: #f5f3f3;
+    }
+
+
+    #functionning_section {
+        margin: 70px 30px 140px 30px;
+    }
+
+    #functionning_section h2 {
+        margin-bottom: 60px;
+        font-size: 2.7em;
+        margin-left: 35px;
+    }
+
+    .container_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        
+    }
+
+    .container {
+        align-items: center;
+    }
+
+    .content_number {
+        position: absolute;
+        transform: translate(0px, -20px);
+        max-width: 40px;
+        margin: auto;
+        text-align: center;
+        background-color: #9356DC;
+        color: white;
+        padding: 8px 20px 5px 20px;
+        border-radius: 50%;
+        font-size: 3.0em;
+        
+    }
+
+    .content_menu {
+        align-items: center;
+        height: 280px;
+        background-color: #f5f3f3;
+        box-shadow: 0px 5px 3px rgb(228, 227, 227);
+        border-radius: 40px;
+        font-weight: bold;
+        padding: 30px;
+    }
+
+    .content_menu:hover {
+        background-color: #faeef5;
+        cursor: pointer;
+    }
+
+    .content_menu:hover i {
+        color: #9356DC;
+    }
+
+    .icon_content_acceuil {
+        display: flex;
+        width: 50px;
+        justify-content: center;
+        margin: auto;
+        font-size: 1.3em;
+        padding: 20px;
+    }
+
+    .icon_content_acceuil i {
+        color: #555454;
+        font-size: 2.5em;
+    }
+
+    .content_menu_text {
+        padding: 30px;
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 2.3em;
+    }
+
+    #cards_section {
+        padding: 100px 30px 120px 30px;
+    }
+
+    #cards_section h2 {
+        font-size: 2.7em;
+        margin-bottom: 40px;
+    }
+
+    .cards_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 30px;
+        box-shadow: 3px 3px 3px rgb(202, 200, 200);
+        height: 500px;
+    }
+
+    .card_image {
+        position: relative;
+        height: 360px;
+        overflow: hidden;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+    
+    .card_image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .element_card_image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #99E2D0;
+        margin-top: 30px;
+        margin-right: 30px;
+        font-size: 2.0em;
+        padding: 15px 30px 15px 30px;
+        border-radius: 5px;
+        color: #509483;
+        font-weight: bold;
+    }
+
+    .card_description_fs {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+    }
+
+    .description_content {
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 1.9em;
+    }
+
+    .description_content .description_text {
+        color: #555454;
+    }
+
+    .icon_content {
+        margin-right: 30px;
+        margin-top: 25px;
+        font-size: 3.0em;
+    }
+
+    .title_text {
+        font-weight: bold;
+        margin-bottom: 5px;
+        font-size: 1.2em;
+    }
+    
+    footer {
+        background-color: #424242;
+        color: white;
+        padding: 55px 0px 50px 45px;
+    }
+
+    footer img {
+        margin-left: 8px;
+    }
+
+    footer ul {
+        margin-top: 30px;
+    }
+
+    footer li {
+        padding: 10px;
+        list-style: none;
+        font-size: 1.9em;
+    }
+
+    footer i {
+        font-size: 0.8em;
+        width: 40px;
+        margin-right: 10px;
+    }
+
+    /*********************************
+    *
+    * *** Pages Menu ***
+    *
+    *********************************/
+    .menu_header {
+        display: flex;
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .arrow_menu_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+    }
+
+    .menu_header a {
+        font-size: 2.5em;   
+    }
+
+    .menu_header i {
+        color: #424242;
+    }
+
+    .logo_container {
+        display: flex;
+        margin: auto;
+        text-align: center;
+    }
+
+    .image_container {
+        position: relative;
+    }
+
+    .image_container img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+
+    .cards_menu_wrap {
+        position: relative;
+        margin-top: -90px;
+        padding: 0px 25px 0px 25px;
+        background-color: #f7f5f5;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+    }
+
+    .card_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 60px;
+    }
+
+    .card_header i {
+        font-size: 3.0em;
+        padding-right: 30px;
+    }
+
+    .title_menu {
+        font-size: 3.5em;
+    }
+
+    .type_of_meal_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    main h3 {
+        text-transform: uppercase;
+        font-weight: normal;
+        margin-bottom: 25px;
+        border-bottom: 7px solid #99E2D0;
+        padding-bottom: 10px;
+        width: 90px;
+        font-size: 2.0em;
+        color: #424242;
+    }
+
+    .list_cards_menu {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .type_of_meal_1, .type_of_meal_2, .type_of_meal_3 {
+        margin-top: 60px;
+    }
+
+    .type_of_meal_3 {
+        transform: translateX(50%);
+    }
+
+    .card_menu {
+        display: flex;
+        height: 170px;
+        justify-content: space-between;
+        vertical-align: middle;
+        align-items: center;
+        background-color: white;
+        border-radius: 25px;
+        padding: 0px 35px 0px 20px;
         box-shadow: 5px 5px 5px rgb(230, 229, 229);
     }
 
