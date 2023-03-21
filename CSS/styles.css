@@ -68,6 +68,42 @@ a:visited {
 ***     Animations apparitions      ***
 *
 ***************************************/
+.type_of_meal_wrap .card_menu {
+
+    transform: translateY(0px);
+    opacity: 1;
+    animation-name: apparition;
+    animation-duration: 1200ms;
+}
+
+@keyframes apparition {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    20% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+        transition: transform 2000ms;
+    }
+}
+
+/*****************************************
+*
+***     Remplissage bouton J'aime      ***
+*
+******************************************/
+.card_header i:hover {
+    cursor: pointer;
+    background: #9356DC;
+    overflow: hidden;
+}
 
 
 
