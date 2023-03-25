@@ -69,6 +69,84 @@ a:visited {
 *
 ***************************************/
 
+/**************************************
+*
+***     Animation icône coeur      ****
+*
+***************************************/
+/* .card_header i {
+    position: relative;
+    -webkit-text-stroke: 6px black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.0em;
+    margin-right: 30px;
+}
+
+.card_header i::after {
+    content: "\f004";
+    position: absolute;
+    background: linear-gradient(#fd83da , #955fd8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;    
+}
+
+.card_header i:hover {
+    transform-origin: 50% 100%;
+    animation: animcoeur 1500ms;
+}
+
+@keyframes animcoeur {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(0);
+    }
+} */
+
+
+
+.card_header i {
+    font-size: 3.0em;
+    margin-right: 30px;
+    opacity: 1;
+    transform-origin: 50% 100%;
+    animation: animcoeur 1500ms;
+    background: linear-gradient(#fd83da , #955fd8);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.card_header i:hover {
+    cursor: pointer;
+
+}
+
+@keyframes animcoeur {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        }
+}
+
+/**************************************
+*
+****     Animation coche card      ****
+*
+***************************************/
+
 
 
 /*************************************
@@ -802,18 +880,31 @@ a:visited {
         box-shadow: 5px 5px 5px rgb(230, 229, 229);
     }
 
+    .description_menu {
+        width: 70%;
+        margin-left: 20px;
+        
+    }
+
     .description_title_menu {
         font-weight: bold;
         font-size: 2.2em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;        
     }
 
     .description_text_menu {
         margin-top: 8px;
         font-size: 1.8em;
         color: #424242;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .price_menu {
+        width: 15%;
         position: relative;
         top: 50px;
         font-weight: bold;
@@ -1140,10 +1231,7 @@ a:visited {
         padding-top: 60px;
     }
 
-    .card_header i {
-        font-size: 3.0em;
-        padding-right: 30px;
-    }
+    
 
     .title_menu {
         font-size: 3.5em;
@@ -1182,33 +1270,49 @@ a:visited {
 
     .card_menu {
         display: flex;
+        width: 100%;
         height: 170px;
-        justify-content: space-between;
         vertical-align: middle;
         align-items: center;
         background-color: white;
         border-radius: 25px;
-        padding: 0px 35px 0px 20px;
         box-shadow: 5px 5px 5px rgb(230, 229, 229);
     }
 
+    .description_menu {
+        width: 70%;
+        margin-left: 20px;
+    }
+
     .description_title_menu {
+        width: 70%;
         font-weight: bold;
         font-size: 2.2em;
+        
     }
 
     .description_text_menu {
+        width: 70%;
         margin-top: 8px;
         font-size: 1.8em;
         color: #424242;
     }
 
     .price_menu {
-        position: relative;
         top: 50px;
         font-weight: bold;
         font-size: 2.0em;
+        margin-right: 20px;
+        width: 20%;
+        text-align: right;
     }
+
+    /* .block_coche {
+        width: 10%;
+        height: 100%;
+        background-color: green;
+
+    } */
 
     .submit_section {
         padding: 90px 0px 40px 0px;
