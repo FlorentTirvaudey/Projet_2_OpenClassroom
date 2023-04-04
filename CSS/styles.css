@@ -85,6 +85,28 @@ a:visited {
     }
 }
 
+@keyframes coche_appear {
+    0% {
+        transform: translateX(150px);
+    }
+    20% {
+        transform: translateX(100px);
+    }
+    40% {
+        transform: translateX(55px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+        transition: transform 2000ms;
+    }
+}
+
+.card_menu_1:hover .coche {
+    transform: translateX(150px);
+    animation: coche_appear 1200ms forwards;
+}
+
 .type_of_meal_wrap .card_menu_1 {
     transform: translateY(0px);
     opacity: 0;
@@ -1375,6 +1397,8 @@ a:visited {
         background-color: white;
         border-radius: 25px;
         box-shadow: 5px 5px 5px rgb(230, 229, 229);
+        position: relative;
+        overflow: hidden;
     }
 
     .card_menu_2 {
@@ -1466,11 +1490,12 @@ a:visited {
     /*******************************************/
 
     .description_menu {
+        width: 70%;
         margin-left: 20px;
+        position: relative;
     }
 
     .description_title_menu {
-        width: 70%;
         font-weight: bold;
         font-size: 2.2em;
         white-space: nowrap;
@@ -1479,7 +1504,6 @@ a:visited {
     }
 
     .description_text_menu {
-        width: 70%;
         margin-top: 8px;
         font-size: 1.8em;
         color: #424242;
@@ -1495,13 +1519,20 @@ a:visited {
         margin-right: 20px;
         width: 20%;
         text-align: right;
+        position: relative;
     }
 
-    /* .block_coche {
+    .coche {
         width: 10%;
         height: 100%;
         background-color: green;
+        position: absolute;
+        right: 0;
+        transform: translateX(150px);
+    }
 
+    /* .card_menu_1:not(:hover) .coche {
+        transform: translateX(0px);
     } */
 
     .submit_section {
