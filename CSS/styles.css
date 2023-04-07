@@ -723,6 +723,43 @@ a:visited {
         margin-top: 60px;
     }
 
+    /**************************************************************/
+    .card_menu_1 {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 25px;
+        padding: 25px 35px 25px 20px;
+        box-shadow: 5px 5px 5px rgb(230, 229, 229);   
+    }
+    
+    .card_menu_2 {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 25px;
+        padding: 25px 35px 25px 20px;
+        box-shadow: 5px 5px 5px rgb(230, 229, 229);   
+    }
+
+    .card_menu_3 {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 25px;
+        padding: 25px 35px 25px 20px;
+        box-shadow: 5px 5px 5px rgb(230, 229, 229);   
+    }
+
+    .card_menu_4 {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 25px;
+        padding: 25px 35px 25px 20px;
+        box-shadow: 5px 5px 5px rgb(230, 229, 229);   
+    }
+
     .card_menu_5 {
         display: flex;
         justify-content: space-between;
@@ -731,6 +768,43 @@ a:visited {
         padding: 25px 35px 25px 20px;
         box-shadow: 5px 5px 5px rgb(230, 229, 229);   
     }
+
+    .card_menu_6 {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 25px;
+        padding: 25px 35px 25px 20px;
+        box-shadow: 5px 5px 5px rgb(230, 229, 229);   
+    }
+
+    .card_menu_7 {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 25px;
+        padding: 25px 35px 25px 20px;
+        box-shadow: 5px 5px 5px rgb(230, 229, 229);   
+    }
+
+    .card_menu_8 {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 25px;
+        padding: 25px 35px 25px 20px;
+        box-shadow: 5px 5px 5px rgb(230, 229, 229);   
+    }
+
+    .card_menu_9 {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 25px;
+        padding: 25px 35px 25px 20px;
+        box-shadow: 5px 5px 5px rgb(230, 229, 229);   
+    }
+    /**************************************************************/
 
     /* .card_menu_1 {
         display: flex;
@@ -1117,6 +1191,7 @@ a:visited {
         margin-top: 60px;
     }
 
+    /***************************************************************/
     .card_menu_1 {
         display: flex;
         justify-content: space-between;
@@ -1125,6 +1200,79 @@ a:visited {
         padding: 25px 35px 25px 20px;
         box-shadow: 5px 5px 5px rgb(230, 229, 229);
     }
+
+    .card_menu_2 {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 25px;
+        padding: 25px 35px 25px 20px;
+        box-shadow: 5px 5px 5px rgb(230, 229, 229);
+    }
+
+    .card_menu_3 {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 25px;
+        padding: 25px 35px 25px 20px;
+        box-shadow: 5px 5px 5px rgb(230, 229, 229);
+    }
+
+    .card_menu_4 {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 25px;
+        padding: 25px 35px 25px 20px;
+        box-shadow: 5px 5px 5px rgb(230, 229, 229);
+    }
+
+    .card_menu_5 {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 25px;
+        padding: 25px 35px 25px 20px;
+        box-shadow: 5px 5px 5px rgb(230, 229, 229);
+    }
+
+    .card_menu_6 {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 25px;
+        padding: 25px 35px 25px 20px;
+        box-shadow: 5px 5px 5px rgb(230, 229, 229);
+    }
+
+    .card_menu_7 {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 25px;
+        padding: 25px 35px 25px 20px;
+        box-shadow: 5px 5px 5px rgb(230, 229, 229);
+    }
+
+    .card_menu_8 {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 25px;
+        padding: 25px 35px 25px 20px;
+        box-shadow: 5px 5px 5px rgb(230, 229, 229);
+    }
+
+    .card_menu_9 {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 25px;
+        padding: 25px 35px 25px 20px;
+        box-shadow: 5px 5px 5px rgb(230, 229, 229);
+    }
+    /***************************************************************/
 
     .description_menu {
         width: 70%;
@@ -1646,7 +1794,7 @@ a:visited {
         /* white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis; */
-        background-color: #13e700;
+        /*background-color: #13e700;*/
     }
 
     .description_title_menu {
