@@ -85,160 +85,6 @@ a:visited {
     }
 }
 
-@keyframes coche_appear {
-    0% {
-        width: 0px;
-    }
-    
-    100% {
-        width: 100px;
-        transition: transform 3000ms;
-    }
-}
-
-@keyframes right_side_move {
-    0% {
-        transform: translateX(0px);
-    }
-
-    100% {
-        transform: translateX(-150px);
-        transition: transform 3000ms;
-    }
-}
-
-.card_menu_1:hover {
-    cursor: pointer;
-}
-
-.card_menu_2:hover {
-    cursor: pointer;
-}
-
-.card_menu_3:hover {
-    cursor: pointer;
-}
-
-.card_menu_4:hover {
-    cursor: pointer;
-}
-
-.card_menu_5:hover {
-    cursor: pointer;
-}
-
-.card_menu_6:hover {
-    cursor: pointer;
-}
-
-.card_menu_7:hover {
-    cursor: pointer;
-}
-
-.card_menu_8:hover {
-    cursor: pointer;
-}
-
-.card_menu_9:hover {
-    cursor: pointer;
-}
-
-/********************************************/
-
-.card_menu_1:hover .coche {
-    animation: coche_appear 1200ms forwards;
-    /* animation-direction: alternate-reverse; */
-}
-
-/* .card_menu_2:hover .coche {
-    transform: translateX(0px);
-    animation: coche_appear 1200ms forwards;
-}
-
-.card_menu_3:hover .coche {
-    transform: translateX(150px);
-    animation: coche_appear 1200ms forwards;
-}
-
-.card_menu_4:hover .coche {
-    transform: translateX(150px);
-    animation: coche_appear 1200ms forwards;
-}
-
-.card_menu_5:hover .coche {
-    transform: translateX(150px);
-    animation: coche_appear 1200ms forwards;
-}
-
-.card_menu_6:hover .coche {
-    transform: translateX(150px);
-    animation: coche_appear 1200ms forwards;
-}
-
-.card_menu_7:hover .coche {
-    transform: translateX(150px);
-    animation: coche_appear 1200ms forwards;
-}
-
-.card_menu_8:hover .coche {
-    transform: translateX(150px);
-    animation: coche_appear 1200ms forwards;
-}
-
-.card_menu_9:hover .coche {
-    transform: translateX(150px);
-    animation: coche_appear 1200ms forwards;
-} */
-
-/********************************************/
-
-/* .card_menu_1:hover .price_menu {
-    transform: translateX(0px);
-    animation: right_side_move 1200ms forwards;
-} */
-
-.card_menu_2:hover .price_menu {
-    transform: translateX(150px);
-    animation: right_side_move 1200ms forwards;
-}
-
-.card_menu_3:hover .price_menu {
-    transform: translateX(150px);
-    animation: coche_appear 1200ms forwards;
-}
-
-.card_menu_4:hover .price_menu {
-    transform: translateX(150px);
-    animation: coche_appear 1200ms forwards;
-}
-
-.card_menu_5:hover .price_menu {
-    transform: translateX(150px);
-    animation: coche_appear 1200ms forwards;
-}
-
-.card_menu_6:hover .price_menu {
-    transform: translateX(150px);
-    animation: coche_appear 1200ms forwards;
-}
-
-.card_menu_7:hover .price_menu {
-    transform: translateX(150px);
-    animation: coche_appear 1200ms forwards;
-}
-
-.card_menu_8:hover .price_menu {
-    transform: translateX(150px);
-    animation: coche_appear 1200ms forwards;
-}
-
-.card_menu_9:hover .price_menu {
-    transform: translateX(150px);
-    animation: coche_appear 1200ms forwards;
-}
-
-/********************************************/
-
 .type_of_meal_wrap .card_menu_1 {
     transform: translateY(0px);
     opacity: 0;
@@ -326,6 +172,16 @@ a:visited {
     animation-delay: 0.8s;
     animation-fill-mode: forwards;
 }
+
+.type_of_meal_wrap .card_menu_10 {
+
+    transform: translateY(0px);
+    opacity: 0;
+    animation-name: apparition;
+    animation-duration: 1200ms;
+    animation-delay: 0.9s;
+    animation-fill-mode: forwards;
+}
 /*****************************************
 *
 ***     Remplissage bouton J'aime      ***
@@ -373,10 +229,366 @@ a:visited {
 ****     Animation coche card      ****
 *
 ***************************************/
+@keyframes coche_appear {
+    0% {
+        width: 0px;
+    }
+    
+    40% {
+        width: 150px;
+    }
 
+    50% {
+        width: 150px;
+    }
 
+    60% {
+        width: 150px;
+    }
 
+    100% {
+        width: 0px;
+    }
+}
 
+.card:hover {
+    cursor: pointer;
+}
+
+.card:hover .coche {
+    animation: coche_appear 3.5s forwards;
+}
+
+/***************************************/
+
+/***********************
+*
+* *** Page d'Acceuil ***
+*
+************************/
+
+/*****************
+*                *
+**    HEADER    **
+*                *
+******************/
+.acceuil_header {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0px 5px rgb(212, 210, 210, 1);
+    margin-bottom: 5px;
+}
+
+.localisation, .header_content {
+    justify-content: center;
+}
+
+.localisation {
+    background-color: #e6e6e6;
+    display: flex;
+    padding: 30px;
+    color: #424242;
+}
+
+.localisation i {
+    margin-right: 30px;
+    font-size: 2.0em;
+}
+
+.localisation_text {
+    font-weight: bold;
+    font-size: 2.0em;
+}
+
+.header_content {
+    text-align: center;
+    padding: 40px;
+}
+
+.header_content h2 {
+    font-weight: bold;
+    margin: auto;
+    max-width: 580px;
+    margin-bottom: 20px;
+    font-size: 2.9em;  
+}
+
+.header_content p {
+    margin: auto;
+    margin-bottom: 50px;
+    font-size: 2.0em;
+    color: #666666;
+}
+
+.header_content, #cards_section {
+    background-color: #f5f3f3;
+}
+
+/*******************************
+*                              *
+**    FONCTIONNING SECTION    **
+*                              *
+********************************/
+#functionning_section h2 {
+    margin-bottom: 60px;
+    font-size: 2.7em;
+    margin-left: 35px;
+}
+
+.content_menu:hover {
+    background-color: #faeef5;
+    cursor: pointer;
+}
+
+.content_menu:hover i {
+    color: #9356DC;
+}
+
+/************************
+*                       *
+**    CARDS SECTION    **
+*                       *
+*************************/
+#cards_section {
+    padding: 100px 30px 120px 30px;
+}
+
+#cards_section h2 {
+    font-size: 2.7em;
+    margin-bottom: 40px;
+}
+
+.icon_content_acceuil i {
+    color: #555454;
+    font-size: 2.5em;
+}
+
+.card_acceuil {
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px rgb(202, 200, 200);
+    height: 500px;
+}
+
+.card_image {
+    position: relative;
+    height: 360px;
+    overflow: hidden;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.card_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.element_card_image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #99E2D0;
+    margin-top: 30px;
+    margin-right: 30px;
+    font-size: 2.0em;
+    padding: 15px 30px 15px 30px;
+    border-radius: 5px;
+    color: #509483;
+    font-weight: bold;
+}
+
+.card_description_fs {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.description_content {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 1.9em;
+}
+
+.description_content .description_text {
+    color: #555454;
+}
+
+.title_text {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.title_menu {
+    font-size: 3.5em;
+}
+
+/*****************
+*                *
+**    FOOTER    **
+*                *
+******************/
+footer {
+    background-color: #424242;
+    color: white;
+    padding: 55px 0px 50px 45px;
+}
+
+footer img {
+    margin-left: 8px;
+}
+
+footer ul {
+    margin-top: 30px;
+}
+
+footer li {
+    padding: 10px;
+    list-style: none;
+    font-size: 1.9em;
+}
+
+footer i {
+    font-size: 0.8em;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.footer_image {
+    filter: invert(1);
+}
+
+/***********************
+*
+* ***** Page Menu ******
+*
+************************/
+
+/*****************
+*                *
+**    HEADER    **
+*                *
+******************/
+.menu_header {
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.arrow_menu_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+}
+
+.menu_header a {
+    font-size: 2.5em;   
+}
+
+.menu_header i {
+    color: #424242;
+}
+
+.logo_container {
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+
+.image_container {
+    position: relative;
+}
+
+/****************
+*               *
+**    CARDS    **
+*               *
+*****************/
+.cards_menu_wrap {
+    position: relative;
+    margin-top: -90px;
+    padding: 0px 25px 0px 25px;
+    background-color: #f7f5f5;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.card_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+main h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 25px;
+    border-bottom: 7px solid #99E2D0;
+    padding-bottom: 10px;
+    color: #424242;
+}
+
+.card {
+    display: flex;
+    height: 150px;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgb(230, 229, 229);
+    position: relative;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.left_side {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.left_side p {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+}
+
+.price_menu {
+    position: absolute;
+    font-weight: bold;
+    right: 10px;
+    bottom: 10px;
+}
+
+.coche {
+    display: flex;
+    height: 100%;
+    width: 0px;
+    background-color: #13e700;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3.5em;
+}
+
+.submit_section {
+    padding: 90px 0px 40px 0px;
+    text-align: center;
+}
+
+.submit_section .submit_button {
+    width: 340px;
+}
 
 /*************************************
 *
@@ -390,74 +602,13 @@ a:visited {
     * *** Page d'Acceuil ***
     *
     ************************/
-    .acceuil_header {
-        text-align: center;
-        margin-top: 20px;
-        padding: 20px;
-        box-shadow: 0px 5px rgb(212, 210, 210, 1);
-        margin-bottom: 5px;
-    }
-
-    .footer_image {
-        filter: invert(1);
-    }
-
-    .localisation, .header_content {
-        justify-content: center;
-    }
-
-    .localisation {
-        background-color: #e6e6e6;
-        display: flex;
-        padding: 30px;
-        color: #424242;
-    }
-
-    .localisation i {
-        margin-right: 30px;
-        font-size: 2.0em;
-    }
-
-    .localisation_text {
-        font-weight: bold;
-        font-size: 2.0em;
-    }
-
-    .header_content {
-        text-align: center;
-        padding: 40px;
-    }
-
-    .header_content h2 {
-        font-weight: bold;
-        margin: auto;
-        max-width: 580px;
-        margin-bottom: 20px;
-        font-size: 2.9em;
-        
-    }
 
     .header_content p {
         max-width: 700px;
-        margin: auto;
-        margin-bottom: 50px;
-        font-size: 2.0em;
-        color: #666666;
     }
-
-    .header_content, #cards_section {
-        background-color: #f5f3f3;
-    }
-
 
     #functionning_section {
         margin: 70px 35px 140px 0px;
-    }
-
-    #functionning_section h2 {
-        margin-bottom: 60px;
-        font-size: 2.7em;
-        margin-left: 35px;
     }
 
     .container_wrap {
@@ -498,15 +649,6 @@ a:visited {
         padding: 30px;
     }
 
-    .content_menu:hover {
-        background-color: #faeef5;
-        cursor: pointer;
-    }
-
-    .content_menu:hover i {
-        color: #9356DC;
-    }
-
     .icon_content_acceuil {
         display: flex;
         width: 50px;
@@ -515,22 +657,8 @@ a:visited {
         margin-left: 40px;
     }
 
-    .icon_content_acceuil i {
-        color: #555454;
-        font-size: 2.5em;
-    }
-
     .content_menu_text {
         font-size: 2.0em;
-    }
-
-    #cards_section {
-        padding: 100px 30px 120px 30px;
-    }
-
-    #cards_section h2 {
-        font-size: 2.7em;
-        margin-bottom: 40px;
     }
 
     .cards_container {
@@ -539,93 +667,10 @@ a:visited {
         gap: 35px;
     }
 
-    .card {
-        background-color: white;
-        border-radius: 30px;
-        box-shadow: 3px 3px 3px rgb(202, 200, 200);
-        height: 500px;
-    }
-
-    .card_image {
-        position: relative;
-        height: 360px;
-        overflow: hidden;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-    }
-    
-    .card_image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .element_card_image {
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: #99E2D0;
-        margin-top: 30px;
-        margin-right: 30px;
-        font-size: 2.0em;
-        padding: 15px 30px 15px 30px;
-        border-radius: 5px;
-        color: #509483;
-        font-weight: bold;
-    }
-
-    .card_description_fs {
-        display: flex;
-        justify-content: space-between;
-        margin: 20px;
-    }
-
-    .description_content {
-        margin-top: 10px;
-        margin-left: 10px;
-        font-size: 1.9em;
-    }
-
-    .description_content .description_text {
-        color: #555454;
-    }
-
     .icon_content {
         margin-right: 30px;
         margin-top: 15px;
         font-size: 3.0em;
-    }
-
-    .title_text {
-        font-weight: bold;
-        margin-bottom: 5px;
-        font-size: 1.2em;
-    }
-    
-    footer {
-        background-color: #424242;
-        color: white;
-        padding: 55px 0px 50px 45px;
-    }
-
-    footer img {
-        margin-left: 8px;
-    }
-
-    footer ul {
-        margin-top: 30px;
-    }
-
-    footer li {
-        padding: 10px;
-        list-style: none;
-        font-size: 1.9em;
-    }
-
-    footer i {
-        font-size: 0.8em;
-        width: 40px;
-        margin-right: 10px;
     }
 
     /*********************************
@@ -633,43 +678,6 @@ a:visited {
     * *** Pages Menu ***
     *
     *********************************/
-    .menu_header {
-        display: flex;
-        margin-top: 20px;
-        padding: 20px;
-    }
-
-    .arrow_menu_container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 60px;
-    }
-
-    .menu_header a {
-        font-size: 2.5em;   
-    }
-
-    .menu_header i {
-        color: #424242;
-    }
-
-    .logo_container {
-        display: flex;
-        margin: auto;
-        text-align: center;
-    }
-    
-    .main_content_menu {
-        
-    }
-
-    main {
-    }
-
-    .image_container {
-        position: relative;
-    }
 
     .image_container img {
         max-width: 780px;
@@ -678,39 +686,13 @@ a:visited {
         object-fit: cover;
     }
 
-    .cards_menu_wrap {
-        position: relative;
-        margin-top: -90px;
-        padding: 0px 25px 0px 25px;
-        background-color: #f7f5f5;
-        border-top-left-radius: 40px;
-        border-top-right-radius: 40px;
-    }
-
-    .card_header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 60px;
-    }
-
     .card_header i {
         font-size: 3.0em;
     }
 
-    .title_menu {
-        font-size: 3.5em;
-    }
-
     main h3 {
-        text-transform: uppercase;
-        font-weight: normal;
-        margin-bottom: 25px;
-        border-bottom: 7px solid #99E2D0;
-        padding-bottom: 10px;
         width: 90px;
         font-size: 2.0em;
-        color: #424242;
     }
 
     .list_cards_menu {
@@ -723,133 +705,23 @@ a:visited {
         margin-top: 60px;
     }
 
-    /**************************************************************/
-    .card_menu_1 {
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-        border-radius: 25px;
-        padding: 25px 35px 25px 20px;
-        box-shadow: 5px 5px 5px rgb(230, 229, 229);   
+    .left_side {
+        padding: 0px 20px;
     }
-    
-    .card_menu_2 {
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-        border-radius: 25px;
-        padding: 25px 35px 25px 20px;
-        box-shadow: 5px 5px 5px rgb(230, 229, 229);   
-    }
-
-    .card_menu_3 {
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-        border-radius: 25px;
-        padding: 25px 35px 25px 20px;
-        box-shadow: 5px 5px 5px rgb(230, 229, 229);   
-    }
-
-    .card_menu_4 {
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-        border-radius: 25px;
-        padding: 25px 35px 25px 20px;
-        box-shadow: 5px 5px 5px rgb(230, 229, 229);   
-    }
-
-    .card_menu_5 {
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-        border-radius: 25px;
-        padding: 25px 35px 25px 20px;
-        box-shadow: 5px 5px 5px rgb(230, 229, 229);   
-    }
-
-    .card_menu_6 {
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-        border-radius: 25px;
-        padding: 25px 35px 25px 20px;
-        box-shadow: 5px 5px 5px rgb(230, 229, 229);   
-    }
-
-    .card_menu_7 {
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-        border-radius: 25px;
-        padding: 25px 35px 25px 20px;
-        box-shadow: 5px 5px 5px rgb(230, 229, 229);   
-    }
-
-    .card_menu_8 {
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-        border-radius: 25px;
-        padding: 25px 35px 25px 20px;
-        box-shadow: 5px 5px 5px rgb(230, 229, 229);   
-    }
-
-    .card_menu_9 {
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-        border-radius: 25px;
-        padding: 25px 35px 25px 20px;
-        box-shadow: 5px 5px 5px rgb(230, 229, 229);   
-    }
-    /**************************************************************/
-
-    /* .card_menu_1 {
-        display: flex;
-        width: 100%;
-        height: 170px;
-        vertical-align: middle;
-        align-items: center;
-        background-color: white;
-        border-radius: 25px;
-        box-shadow: 5px 5px 5px rgb(230, 229, 229);
-    } */
 
     .description_title_menu {
         font-weight: bold;
-        font-size: 2.2em;
-        width: 80%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        font-size: 2.2em;    
     }
 
     .description_text_menu {
         margin-top: 8px;
         font-size: 1.8em;
         color: #424242;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        width: 80%;
     }
 
     .price_menu {
-        position: relative;
-        top: 50px;
-        font-weight: bold;
         font-size: 2.0em;
-    }
-
-    .submit_section {
-        padding: 90px 0px 40px 0px;
-        text-align: center;
-    }
-
-    .submit_section .submit_button {
-        width: 340px;
     }
 }
 
@@ -866,74 +738,13 @@ a:visited {
     * *** Page d'Acceuil ***
     *
     ************************/
-    .acceuil_header {
-        text-align: center;
-        margin-top: 20px;
-        padding: 20px;
-        box-shadow: 0px 5px rgb(212, 210, 210, 1);
-        margin-bottom: 5px;
-    }
-
-    .footer_image {
-        filter: invert(1);
-    }
-
-    .localisation, .header_content {
-        justify-content: center;
-    }
-
-    .localisation {
-        background-color: #e6e6e6;
-        display: flex;
-        padding: 30px;
-        color: #424242;
-    }
-
-    .localisation i {
-        margin-right: 30px;
-        font-size: 2.0em;
-    }
-
-    .localisation_text {
-        font-weight: bold;
-        font-size: 2.0em;
-    }
-
-    .header_content {
-        text-align: center;
-        padding: 40px;
-    }
-
-    .header_content h2 {
-        font-weight: bold;
-        margin: auto;
-        max-width: 580px;
-        margin-bottom: 20px;
-        font-size: 2.9em;
-        
-    }
 
     .header_content p {
         max-width: 700px;
-        margin: auto;
-        margin-bottom: 50px;
-        font-size: 2.0em;
-        color: #666666;
     }
-
-    .header_content, #cards_section {
-        background-color: #f5f3f3;
-    }
-
 
     #functionning_section {
         margin: 70px 35px 140px 0px;
-    }
-
-    #functionning_section h2 {
-        margin-bottom: 60px;
-        font-size: 2.7em;
-        margin-left: 35px;
     }
 
     .container_wrap {
@@ -974,15 +785,6 @@ a:visited {
         padding: 30px;
     }
 
-    .content_menu:hover {
-        background-color: #faeef5;
-        cursor: pointer;
-    }
-
-    .content_menu:hover i {
-        color: #9356DC;
-    }
-
     .icon_content_acceuil {
         display: flex;
         width: 50px;
@@ -991,22 +793,8 @@ a:visited {
         margin-left: 40px;
     }
 
-    .icon_content_acceuil i {
-        color: #555454;
-        font-size: 2.5em;
-    }
-
     .content_menu_text {
         font-size: 2.0em;
-    }
-
-    #cards_section {
-        padding: 100px 30px 120px 30px;
-    }
-
-    #cards_section h2 {
-        font-size: 2.7em;
-        margin-bottom: 40px;
     }
 
     .cards_container {
@@ -1015,93 +803,10 @@ a:visited {
         gap: 35px;
     }
 
-    .card {
-        background-color: white;
-        border-radius: 30px;
-        box-shadow: 3px 3px 3px rgb(202, 200, 200);
-        height: 500px;
-    }
-
-    .card_image {
-        position: relative;
-        height: 360px;
-        overflow: hidden;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-    }
-    
-    .card_image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .element_card_image {
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: #99E2D0;
-        margin-top: 30px;
-        margin-right: 30px;
-        font-size: 2.0em;
-        padding: 15px 30px 15px 30px;
-        border-radius: 5px;
-        color: #509483;
-        font-weight: bold;
-    }
-
-    .card_description_fs {
-        display: flex;
-        justify-content: space-between;
-        margin: 20px;
-    }
-
-    .description_content {
-        margin-top: 10px;
-        margin-left: 10px;
-        font-size: 1.9em;
-    }
-
-    .description_content .description_text {
-        color: #555454;
-    }
-
     .icon_content {
         margin-right: 30px;
         margin-top: 15px;
         font-size: 3.0em;
-    }
-
-    .title_text {
-        font-weight: bold;
-        margin-bottom: 5px;
-        font-size: 1.2em;
-    }
-    
-    footer {
-        background-color: #424242;
-        color: white;
-        padding: 55px 0px 50px 45px;
-    }
-
-    footer img {
-        margin-left: 8px;
-    }
-
-    footer ul {
-        margin-top: 30px;
-    }
-
-    footer li {
-        padding: 10px;
-        list-style: none;
-        font-size: 1.9em;
-    }
-
-    footer i {
-        font-size: 0.8em;
-        width: 40px;
-        margin-right: 10px;
     }
 
     /*********************************
@@ -1109,36 +814,6 @@ a:visited {
     * *** Pages Menu ***
     *
     *********************************/
-    .menu_header {
-        display: flex;
-        margin-top: 20px;
-        padding: 20px;
-    }
-
-    .arrow_menu_container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 60px;
-    }
-
-    .menu_header a {
-        font-size: 2.5em;   
-    }
-
-    .menu_header i {
-        color: #424242;
-    }
-
-    .logo_container {
-        display: flex;
-        margin: auto;
-        text-align: center;
-    }
-    
-    .image_container {
-        position: relative;
-    }
 
     .image_container img {
         width: 100%;
@@ -1146,39 +821,13 @@ a:visited {
         object-fit: cover;
     }
 
-    .cards_menu_wrap {
-        position: relative;
-        margin-top: -90px;
-        padding: 0px 25px 0px 25px;
-        background-color: #f7f5f5;
-        border-top-left-radius: 40px;
-        border-top-right-radius: 40px;
-    }
-
-    .card_header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 60px;
-    }
-
     .card_header i {
         font-size: 3.0em;
     }
 
-    .title_menu {
-        font-size: 3.5em;
-    }
-
     main h3 {
-        text-transform: uppercase;
-        font-weight: normal;
-        margin-bottom: 25px;
-        border-bottom: 7px solid #99E2D0;
-        padding-bottom: 10px;
         width: 90px;
         font-size: 2.0em;
-        color: #424242;
     }
 
     .list_cards_menu {
@@ -1191,127 +840,23 @@ a:visited {
         margin-top: 60px;
     }
 
-    /***************************************************************/
-    .card_menu_1 {
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-        border-radius: 25px;
-        padding: 25px 35px 25px 20px;
-        box-shadow: 5px 5px 5px rgb(230, 229, 229);
-    }
-
-    .card_menu_2 {
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-        border-radius: 25px;
-        padding: 25px 35px 25px 20px;
-        box-shadow: 5px 5px 5px rgb(230, 229, 229);
-    }
-
-    .card_menu_3 {
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-        border-radius: 25px;
-        padding: 25px 35px 25px 20px;
-        box-shadow: 5px 5px 5px rgb(230, 229, 229);
-    }
-
-    .card_menu_4 {
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-        border-radius: 25px;
-        padding: 25px 35px 25px 20px;
-        box-shadow: 5px 5px 5px rgb(230, 229, 229);
-    }
-
-    .card_menu_5 {
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-        border-radius: 25px;
-        padding: 25px 35px 25px 20px;
-        box-shadow: 5px 5px 5px rgb(230, 229, 229);
-    }
-
-    .card_menu_6 {
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-        border-radius: 25px;
-        padding: 25px 35px 25px 20px;
-        box-shadow: 5px 5px 5px rgb(230, 229, 229);
-    }
-
-    .card_menu_7 {
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-        border-radius: 25px;
-        padding: 25px 35px 25px 20px;
-        box-shadow: 5px 5px 5px rgb(230, 229, 229);
-    }
-
-    .card_menu_8 {
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-        border-radius: 25px;
-        padding: 25px 35px 25px 20px;
-        box-shadow: 5px 5px 5px rgb(230, 229, 229);
-    }
-
-    .card_menu_9 {
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-        border-radius: 25px;
-        padding: 25px 35px 25px 20px;
-        box-shadow: 5px 5px 5px rgb(230, 229, 229);
-    }
-    /***************************************************************/
-
-    .description_menu {
-        width: 70%;
-        margin-left: 20px;
-        
+    .left_side {
+        padding: 0px 30px;
     }
 
     .description_title_menu {
         font-weight: bold;
-        font-size: 2.2em;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;        
+        font-size: 2.2em;    
     }
 
     .description_text_menu {
         margin-top: 8px;
         font-size: 1.8em;
         color: #424242;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 
     .price_menu {
-        width: 15%;
-        position: relative;
-        top: 50px;
-        font-weight: bold;
         font-size: 2.0em;
-    }
-
-    .submit_section {
-        padding: 90px 0px 40px 0px;
-        text-align: center;
-    }
-
-    .submit_section .submit_button {
-        width: 340px;
     }
 }
 
@@ -1328,73 +873,9 @@ a:visited {
     * *** Page d'Acceuil ***
     *
     ************************/
-    .acceuil_header {
-        text-align: center;
-        margin-top: 20px;
-        padding: 20px;
-        box-shadow: 0px 5px rgb(212, 210, 210, 1);
-        margin-bottom: 5px;
-    }
-
-    .footer_image {
-        filter: invert(1);
-    }
-
-    .localisation, .header_content {
-        justify-content: center;
-    }
-
-    .localisation {
-        background-color: #e6e6e6;
-        display: flex;
-        padding: 30px;
-        color: #424242;
-    }
-
-    .localisation i {
-        margin-right: 30px;
-        font-size: 2.0em;
-    }
-
-    .localisation_text {
-        font-weight: bold;
-        font-size: 2.0em;
-    }
-
-    .header_content {
-        text-align: center;
-        padding: 40px;
-    }
-
-    .header_content h2 {
-        font-weight: bold;
-        margin: auto;
-        max-width: 580px;
-        margin-bottom: 20px;
-        font-size: 2.9em;
-        
-    }
-
-    .header_content p {
-        margin: auto;
-        margin-bottom: 50px;
-        font-size: 2.0em;
-        color: #666666;
-    }
-
-    .header_content, #cards_section {
-        background-color: #f5f3f3;
-    }
-
 
     #functionning_section {
         margin: 70px 30px 140px 30px;
-    }
-
-    #functionning_section h2 {
-        margin-bottom: 60px;
-        font-size: 2.7em;
-        margin-left: 35px;
     }
 
     .container_wrap {
@@ -1432,15 +913,6 @@ a:visited {
         padding: 30px;
     }
 
-    .content_menu:hover {
-        background-color: #faeef5;
-        cursor: pointer;
-    }
-
-    .content_menu:hover i {
-        color: #9356DC;
-    }
-
     .icon_content_acceuil {
         display: flex;
         width: 50px;
@@ -1448,11 +920,6 @@ a:visited {
         margin: auto;
         font-size: 1.3em;
         padding: 20px;
-    }
-
-    .icon_content_acceuil i {
-        color: #555454;
-        font-size: 2.5em;
     }
 
     .content_menu_text {
@@ -1463,70 +930,10 @@ a:visited {
         font-size: 2.3em;
     }
 
-    #cards_section {
-        padding: 100px 30px 120px 30px;
-    }
-
-    #cards_section h2 {
-        font-size: 2.7em;
-        margin-bottom: 40px;
-    }
-
     .cards_container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 35px;
-    }
-
-    .card {
-        background-color: white;
-        border-radius: 30px;
-        box-shadow: 3px 3px 3px rgb(202, 200, 200);
-        height: 500px;
-    }
-
-    .card_image {
-        position: relative;
-        height: 360px;
-        overflow: hidden;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-    }
-    
-    .card_image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .element_card_image {
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: #99E2D0;
-        margin-top: 30px;
-        margin-right: 30px;
-        font-size: 2.0em;
-        padding: 15px 30px 15px 30px;
-        border-radius: 5px;
-        color: #509483;
-        font-weight: bold;
-    }
-
-    .card_description_fs {
-        display: flex;
-        justify-content: space-between;
-        margin: 20px;
-    }
-
-    .description_content {
-        margin-top: 10px;
-        margin-left: 10px;
-        font-size: 1.9em;
-    }
-
-    .description_content .description_text {
-        color: #555454;
     }
 
     .icon_content {
@@ -1534,101 +941,17 @@ a:visited {
         margin-top: 25px;
         font-size: 3.0em;
     }
-
-    .title_text {
-        font-weight: bold;
-        margin-bottom: 5px;
-        font-size: 1.2em;
-    }
     
-    footer {
-        background-color: #424242;
-        color: white;
-        padding: 55px 0px 50px 45px;
-    }
-
-    footer img {
-        margin-left: 8px;
-    }
-
-    footer ul {
-        margin-top: 30px;
-    }
-
-    footer li {
-        padding: 10px;
-        list-style: none;
-        font-size: 1.9em;
-    }
-
-    footer i {
-        font-size: 0.8em;
-        width: 40px;
-        margin-right: 10px;
-    }
-
     /*********************************
     *
     * *** Pages Menu ***
     *
     *********************************/
-    .menu_header {
-        display: flex;
-        margin-top: 20px;
-        padding: 20px;
-    }
-
-    .arrow_menu_container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 60px;
-    }
-
-    .menu_header a {
-        font-size: 2.5em;   
-    }
-
-    .menu_header i {
-        color: #424242;
-    }
-
-    .logo_container {
-        display: flex;
-        margin: auto;
-        text-align: center;
-    }
-
-    .image_container {
-        position: relative;
-    }
 
     .image_container img {
         width: 100%;
         height: 480px;
         object-fit: cover;
-    }
-
-    .cards_menu_wrap {
-        position: relative;
-        margin-top: -90px;
-        padding: 0px 25px 0px 25px;
-        background-color: #f7f5f5;
-        border-top-left-radius: 40px;
-        border-top-right-radius: 40px;
-    }
-
-    .card_header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 60px;
-    }
-
-    
-
-    .title_menu {
-        font-size: 3.5em;
     }
 
     .type_of_meal_wrap {
@@ -1638,14 +961,8 @@ a:visited {
     }
 
     main h3 {
-        text-transform: uppercase;
-        font-weight: normal;
-        margin-bottom: 25px;
-        border-bottom: 7px solid #99E2D0;
-        padding-bottom: 10px;
         width: 60px;
         font-size: 1.7em;
-        color: #424242;
     }
 
     .list_cards_menu {
@@ -1660,51 +977,8 @@ a:visited {
         width: 32%;
     }
 
-    /* .type_of_meal_3 {
-        transform: translateX(50%);
-    } */
-
-    /*******************************************/
-    /* 
-    *   Les cards sont défini de la sorte pour
-    *   simuler un for qui aurait pu être
-    *   utilisé si SASS aurait été privilégié
-    *   à du CSS classique
-    */
-    .card {
-        display: flex;
-        height: 150px;
-        vertical-align: middle;
-        align-items: center;
-        background-color: white;
-        border-radius: 25px;
-        box-shadow: 5px 5px 5px rgb(230, 229, 229);
-        position: relative;
-        overflow: hidden;
-        justify-content: space-between;
-    }
-
-    
-    /*******************************************/
-
     .left_side {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
         padding: 0px 20px;
-    }
-
-    .left_side p {
-        width: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 
     .description_title_menu {
@@ -1719,38 +993,6 @@ a:visited {
     }
 
     .price_menu {
-        position: absolute;
-        font-weight: bold;
         font-size: 1.2em;
-        /* margin-right: 20px; */
-        right: 10px;
-        bottom: 10px;
-    }
-
-    /* .price_menu p {
-        text-align: center;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 10px;
-    } */
-
-    .coche {
-        display: flex;
-        height: 100%;
-        width: 0px;
-        background-color: #13e700;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 3.5em;
-    }
-
-    .submit_section {
-        padding: 90px 0px 40px 0px;
-        text-align: center;
-    }
-
-    .submit_section .submit_button {
-        width: 340px;
     }
 }
