@@ -17,8 +17,6 @@ a:visited {
     color: black;
 }
 
-
-
 /*********************  Les animations  ************************/
 
 /************************************
@@ -85,7 +83,7 @@ a:visited {
     }
 }
 
-.type_of_meal_wrap .card_menu_1 {
+.type_of_meal_wrap .card {
     transform: translateY(0px);
     opacity: 0;
     animation-name: apparition;
@@ -94,94 +92,41 @@ a:visited {
 }
 
 .type_of_meal_wrap .card_menu_2 {
-
-    transform: translateY(0px);
-    opacity: 0;
-    animation-name: apparition;
-    animation-duration: 1200ms;
     animation-delay: 0.1s;
-    animation-fill-mode: forwards;
 }
 
 .type_of_meal_wrap .card_menu_3 {
-
-    transform: translateY(0px);
-    opacity: 0;
-    animation-name: apparition;
-    animation-duration: 1200ms;
     animation-delay: 0.2s;
-    animation-fill-mode: forwards;
 }
 
 .type_of_meal_wrap .card_menu_4 {
-
-    transform: translateY(0px);
-    opacity: 0;
-    animation-name: apparition;
-    animation-duration: 1200ms;
     animation-delay: 0.3s;
-    animation-fill-mode: forwards;
 }
 
 .type_of_meal_wrap .card_menu_5 {
-
-    transform: translateY(0px);
-    opacity: 0;
-    animation-name: apparition;
-    animation-duration: 1200ms;
     animation-delay: 0.4s;
-    animation-fill-mode: forwards;
 }
 
 .type_of_meal_wrap .card_menu_6 {
-
-    transform: translateY(0px);
-    opacity: 0;
-    animation-name: apparition;
-    animation-duration: 1200ms;
     animation-delay: 0.5s;
-    animation-fill-mode: forwards;
 }
 
 .type_of_meal_wrap .card_menu_7 {
-
-    transform: translateY(0px);
-    opacity: 0;
-    animation-name: apparition;
-    animation-duration: 1200ms;
     animation-delay: 0.6s;
-    animation-fill-mode: forwards;
 }
 
 .type_of_meal_wrap .card_menu_8 {
-
-    transform: translateY(0px);
-    opacity: 0;
-    animation-name: apparition;
-    animation-duration: 1200ms;
     animation-delay: 0.7s;
-    animation-fill-mode: forwards;
 }
 
 .type_of_meal_wrap .card_menu_9 {
-
-    transform: translateY(0px);
-    opacity: 0;
-    animation-name: apparition;
-    animation-duration: 1200ms;
     animation-delay: 0.8s;
-    animation-fill-mode: forwards;
 }
 
 .type_of_meal_wrap .card_menu_10 {
-
-    transform: translateY(0px);
-    opacity: 0;
-    animation-name: apparition;
-    animation-duration: 1200ms;
     animation-delay: 0.9s;
-    animation-fill-mode: forwards;
 }
+
 /*****************************************
 *
 ***     Remplissage bouton J'aime      ***
@@ -220,7 +165,49 @@ a:visited {
 ***     Animation loading spinner      ****
 *
 *******************************************/
+.dots_container {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background: #eeeeee;
+    z-index: 1001;
+}
 
+.dot {
+    /*position: absolute;*/
+    background: linear-gradient(#fd83da , #955fd8);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.dot1 {
+}
+
+.dot2 {
+
+}
+
+.dot3 {
+   
+}
+
+.dot4 {
+  
+}
+
+.dot5 {
+ 
+}
+
+.dot6 {
+ 
+}
 
 
 
@@ -229,25 +216,21 @@ a:visited {
 ****     Animation coche card      ****
 *
 ***************************************/
-@keyframes coche_appear {
+@keyframes icone_coche_apparition {
     0% {
-        width: 0px;
+        opacity: 0;
+        transform: rotate(-90deg);
     }
-    
+    20% {
+        opacity: 0.8;
+    }
     40% {
-        width: 150px;
+        opacity: 1;
+        transform: rotate(-360deg);
     }
-
-    50% {
-        width: 150px;
-    }
-
-    60% {
-        width: 150px;
-    }
-
     100% {
-        width: 0px;
+        opacity: 1;
+        transform: rotate(-360deg);
     }
 }
 
@@ -256,7 +239,11 @@ a:visited {
 }
 
 .card:hover .coche {
-    animation: coche_appear 3.5s forwards;
+    width: 150px;
+}
+
+.card:hover .coche i {
+    animation: icone_coche_apparition 3.5s forwards;
 }
 
 /***************************************/
@@ -579,6 +566,7 @@ main h3 {
     align-items: center;
     color: white;
     font-size: 3.5em;
+    transition: width 1.5s;
 }
 
 .submit_section {
