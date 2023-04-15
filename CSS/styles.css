@@ -174,42 +174,96 @@ a:visited {
     left: 0;
     justify-content: center;
     align-items: center;
-    background: #eeeeee;
+    background: #f5f3f3;
     z-index: 1001;
+    animation: affichage_loading_spinner 6s forwards;
+}
+
+@keyframes affichage_loading_spinner {
+    0% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -3;
+    }
+}
+
+@keyframes apparition_dot {
+    0% {
+        opacity: 0;
+        transform: translateX(-400px);
+    }
+
+    35% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+    45% {
+        transform: scale(1.5);
+    }
+
+    75% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(400px);
+    }
 }
 
 .dot {
-    /*position: absolute;*/
     background: linear-gradient(#fd83da , #955fd8);
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
+    margin: 20px;
+    animation: apparition_dot 3.5s infinite;
 }
 
 .dot1 {
+    animation-delay: 0.8s;
 }
 
 .dot2 {
-
+    animation-delay: 0.7s;
 }
 
 .dot3 {
-   
+   animation-delay: 0.6s;
 }
 
 .dot4 {
-  
+    animation-delay: 0.5s;
 }
 
 .dot5 {
- 
+    animation-delay: 0.4s;
 }
 
 .dot6 {
- 
+    animation-delay: 0.3s;
 }
 
+.dot7 {
+    animation-delay: 0.2s;
+}
 
+.dot8 {
+    animation-delay: 0.1s;
+}
 
 /**************************************
 *
